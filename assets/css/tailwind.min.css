@@ -537,11 +537,7 @@ video {
     display: none;
   }
 }
-@media (max-width: 2099px) {
-  #img-border {
-    display: none;
-  }
-}
+
 .pointer-events-none {
   pointer-events: none !important;
 }
