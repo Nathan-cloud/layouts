@@ -1120,6 +1120,21 @@
 
 splide.mount();
     </script>
+        <script>
+          const menuOpenBtn = document.querySelector('.menu-open-btn');
+          const menuCloseBtn = document.querySelector('.menu-close-btn');
+          const offcanvasMenu = document.querySelector('.offcanvas-menu');
+    
+          menuCloseBtn.addEventListener('click', function(){
+            offcanvasMenu.classList.remove('translate-y-0');
+            offcanvasMenu.classList.add('translate-y-full');
+          });
+    
+          menuOpenBtn.addEventListener('click', function(){
+            offcanvasMenu.classList.remove('translate-y-full');
+            offcanvasMenu.classList.add('translate-y-0');
+          });
+        </script>
     <!-- JAVASCRIPTS -->
     <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
     <script src="assets/libs/tobii/js/tobii.min.js"></script>
